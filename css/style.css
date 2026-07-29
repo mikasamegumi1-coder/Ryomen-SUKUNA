@@ -1,15 +1,80 @@
+/* ===========================
+   RYOMEN SUKUNA
+   KING OF CURSES ANALYTICS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===== ROOT ===== */
+
+:root{
+
+    --bg:#0A0B12;
+    --sidebar:#12141D;
+    --card:#1A1D29;
+    --border:#2B2F40;
+
+    --primary:#8B5CF6;
+    --danger:#DC2626;
+    --gold:#F4C542;
+
+    --text:#FFFFFF;
+    --muted:#A5ADBA;
+
+}
+
+/* ===== RESET ===== */
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  background:#f5f6fb;
-  color:#111;
+
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+
 }
 
-#app{
-  min-height:100vh;
+/* ===== APP ===== */
+
+.app{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+
+    width:280px;
+    background:var(--sidebar);
+    border-right:1px solid var(--border);
+    padding:30px;
+
+}
+
+/* ===== MAIN ===== */
+
+.main-content{
+
+    flex:1;
+    padding:40px;
+
+}
+
+/* ===== CARD ===== */
+
+.card{
+
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:25px;
+
 }

@@ -1,44 +1,12 @@
+/* ======================================================
+   RYOMEN SUKUNA
+   Desktop Premium UI
+====================================================== */
 
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Arial,sans-serif;
-background:#0b0b0b;
-color:#fff;
-}
-.app{display:flex;min-height:100vh}
-.sidebar{
-width:260px;background:#111;padding:24px;border-right:1px solid #2a2a2a;position:sticky;top:0;height:100vh}
-.logo h1{color:#ff3b3b}.logo h2{margin-bottom:6px}
-.logo p{color:#aaa;font-size:13px}
-.menu{margin-top:30px;display:flex;flex-direction:column;gap:10px}
-.menu a{color:#ddd;text-decoration:none;padding:12px 14px;border-radius:10px;transition:.25s}
-.menu a:hover,.menu a.active{background:#1c1c1c;color:#ff4b4b}
-.main-content{flex:1;padding:28px}
-.hero{display:flex;justify-content:space-between;align-items:center;gap:30px;background:linear-gradient(135deg,#171717,#0d0d0d);padding:30px;border-radius:20px;border:1px solid #2a2a2a}
-.hero h1{font-size:52px;color:#ff3b3b}
-.hero p{color:#bbb;margin:12px 0 20px}
-.search-box{display:flex;gap:12px;flex-wrap:wrap}
-.search-box input{flex:1;min-width:250px;padding:14px;border-radius:12px;border:1px solid #333;background:#161616;color:#fff}
-.search-box button{padding:14px 22px;border:none;border-radius:12px;background:#c51515;color:#fff;font-weight:bold;cursor:pointer}
-.search-box button:hover{background:#ef2b2b}
-.analysis-status{margin-top:18px}.status-text{margin-bottom:8px;color:#ccc}
-.progress-bar{height:10px;background:#222;border-radius:99px;overflow:hidden}
-.progress-fill{width:0;height:100%;background:linear-gradient(90deg,#ff1e1e,#ff7070);transition:.4s}
-.hero-image img{max-width:360px;width:100%;filter:drop-shadow(0 0 18px rgba(255,0,0,.45))}
-.dashboard{display:grid;gap:24px;margin-top:24px}
-.card{background:#121212;border:1px solid #2a2a2a;border-radius:18px;padding:24px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:18px}
-.stat-card,.recommend-item,.history-item,.grade-item,.insight-box{background:#1a1a1a;border:1px solid #2d2d2d;border-radius:14px;padding:16px}
-.stat-card{text-align:center}
-.stat-card h3,.score,#winningScore{color:#ff4747}
-.winning-gauge{text-align:center;margin-top:24px}
-.gauge-circle{width:200px;height:200px;border-radius:50%;margin:16px auto;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#111 58%,transparent 59%),conic-gradient(#ff3333 0 332deg,#2a2a2a 332deg)}
-.grade-list{display:flex;flex-direction:column;gap:10px}
-.grade-item,.recommend-item,.history-item,.card-header{display:flex;justify-content:space-between;align-items:center}
-.card-header a{color:#ff5a5a;text-decoration:none}
-@media(max-width:900px){
-.app{flex-direction:column}
-.sidebar{width:100%;height:auto;position:static}
-.hero{flex-direction:column}
-.hero h1{font-size:38px}
-}
+@import url("theme.css");
+@import url("layout.css");
+@import url("sidebar.css");
+@import url("hero.css");
+@import url("dashboard.css");
+@import url("components.css");
+@import url("animations.css");

@@ -180,3 +180,31 @@ button:hover{
 ::-webkit-scrollbar-track{
     background:#111;
 }
+/* HERO IMAGE */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:420px;
+    filter:
+        drop-shadow(0 0 30px rgba(255,0,0,.45));
+    transition:.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.03);
+}

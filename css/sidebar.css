@@ -1,0 +1,151 @@
+/* ======================================================
+   SIDEBAR
+   Desktop Premium Edition
+====================================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:300px;
+    height:100vh;
+
+    padding:35px 25px;
+
+    background:rgba(18,20,29,.90);
+
+    backdrop-filter:blur(18px);
+
+    border-right:1px solid var(--border);
+
+    display:flex;
+    flex-direction:column;
+
+    z-index:1000;
+
+}
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.logo{
+
+    margin-bottom:45px;
+
+    text-align:center;
+
+}
+
+.logo h1{
+
+    font-size:34px;
+
+    color:var(--text);
+
+    letter-spacing:3px;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+    color:var(--danger);
+
+    margin-top:5px;
+
+    letter-spacing:2px;
+
+}
+
+.logo p{
+
+    margin-top:12px;
+
+    font-size:13px;
+
+    color:var(--muted);
+
+}
+
+/* ======================================================
+   MENU
+====================================================== */
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    color:var(--muted);
+
+    transition:var(--transition);
+
+    font-weight:500;
+
+}
+
+/* Hover */
+
+.menu a:hover{
+
+    background:rgba(139,92,246,.15);
+
+    color:var(--text);
+
+    transform:translateX(8px);
+
+}
+
+/* Active */
+
+.menu a.active{
+
+    background:rgba(139,92,246,.20);
+
+    color:var(--text);
+
+    border-left:4px solid var(--primary);
+
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.sidebar::after{
+
+    content:"RYOMEN SUKUNA";
+
+    margin-top:auto;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.08);
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}

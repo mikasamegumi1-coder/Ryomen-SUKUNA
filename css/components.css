@@ -1,0 +1,159 @@
+/* ======================================================
+   COMPONENTS
+====================================================== */
+
+/* BUTTON */
+
+.btn,
+button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:16px 30px;
+
+    border-radius:16px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        var(--danger),
+        #8B0000
+    );
+
+    transition:var(--transition);
+
+}
+
+.btn:hover,
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(220,38,38,.35);
+
+}
+
+/* INPUT */
+
+input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border-radius:16px;
+
+    background:#11141D;
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    font-size:16px;
+
+}
+
+input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 20px rgba(139,92,246,.25);
+
+}
+
+/* CARD TITLE */
+
+.card-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+/* BADGE */
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    background:rgba(139,92,246,.18);
+
+    color:var(--primary);
+
+}
+
+/* STATUS */
+
+.status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* PROGRESS */
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    border-radius:999px;
+
+    background:#11141D;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--danger),
+        var(--primary)
+    );
+
+    transition:width .8s ease;
+
+}

@@ -1,0 +1,128 @@
+/* ======================================================
+   LAYOUT
+   Desktop Premium Edition
+====================================================== */
+
+/* APP */
+
+.app{
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    min-height:100vh;
+
+}
+
+/* MAIN CONTENT */
+
+.main-content{
+
+    margin-left:300px;
+
+    width:calc(100% - 300px);
+
+    min-height:100vh;
+
+    padding:40px 50px;
+
+}
+
+/* HERO */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin-bottom:45px;
+
+}
+
+/* HERO TEXT */
+
+.hero-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.hero-text h3{
+
+    color:var(--gold);
+
+    letter-spacing:4px;
+
+    font-size:15px;
+
+}
+
+.hero-text h1{
+
+    font-size:62px;
+
+    line-height:1.1;
+
+}
+
+.hero-text p{
+
+    max-width:620px;
+
+    font-size:17px;
+
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:620px;
+
+    object-fit:contain;
+
+    filter:drop-shadow(0 0 40px rgba(220,38,38,.35));
+
+}
+
+/* DASHBOARD */
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+/* FULL WIDTH CARD */
+
+.card.full{
+
+    grid-column:1 / -1;
+
+}

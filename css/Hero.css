@@ -1,0 +1,211 @@
+/* ======================================================
+   HERO
+   Desktop Premium Edition
+====================================================== */
+
+.hero{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    min-height:520px;
+
+    margin-bottom:45px;
+
+}
+
+/* ==========================
+   HERO TEXT
+========================== */
+
+.hero-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.hero-text h3{
+
+    font-size:14px;
+
+    color:var(--gold);
+
+    letter-spacing:5px;
+
+}
+
+.hero-text h1{
+
+    font-size:72px;
+
+    line-height:1;
+
+    color:var(--text);
+
+}
+
+.hero-text p{
+
+    max-width:620px;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search-box{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    background:#11141D;
+
+    color:white;
+
+    padding:18px 22px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    font-size:16px;
+
+}
+
+.search-box input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 25px rgba(139,92,246,.30);
+
+}
+
+/* BUTTON */
+
+.search-box button{
+
+    background:linear-gradient(
+        135deg,
+        var(--danger),
+        #8B0000
+    );
+
+    color:white;
+
+    padding:18px 34px;
+
+    border-radius:16px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.search-box button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(220,38,38,.35);
+
+}
+
+/* ==========================
+   STATUS
+========================== */
+
+.analysis-status{
+
+    margin-top:18px;
+
+}
+
+.status-text{
+
+    margin-bottom:12px;
+
+    font-weight:600;
+
+}
+
+.progress-bar{
+
+    height:12px;
+
+    background:#151922;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--danger),
+        var(--primary)
+    );
+
+    transition:1s;
+
+}
+
+/* ==========================
+   HERO IMAGE
+========================== */
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:620px;
+
+    transition:.5s;
+
+    filter:
+        drop-shadow(0 0 45px rgba(220,38,38,.35));
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.03);
+
+}

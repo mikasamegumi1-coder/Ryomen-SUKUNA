@@ -1,0 +1,212 @@
+/* ======================================================
+   ANIMATIONS
+   RYOMEN SUKUNA
+====================================================== */
+
+/* ===============================
+   KEYFRAMES
+================================ */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 10px rgba(139,92,246,.20);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 35px rgba(139,92,246,.45);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 10px rgba(139,92,246,.20);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes shake{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    20%{
+
+        transform:translateX(-4px);
+
+    }
+
+    40%{
+
+        transform:translateX(4px);
+
+    }
+
+    60%{
+
+        transform:translateX(-4px);
+
+    }
+
+    80%{
+
+        transform:translateX(4px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ===============================
+   GLOBAL EFFECT
+================================ */
+
+.card{
+
+    animation:fadeIn .6s ease;
+
+}
+
+.card:hover{
+
+    animation:pulse .8s ease;
+
+}
+
+.hero-image img{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.search-box button:hover{
+
+    animation:glow 1.5s infinite;
+
+}
+
+/* ===============================
+   SUMMON MODE
+================================ */
+
+body.summon-mode{
+
+    transition:1s;
+
+    background:#140505;
+
+}
+
+body.summon-mode .card{
+
+    border-color:rgba(220,38,38,.65);
+
+}
+
+body.summon-mode .sidebar{
+
+    border-right-color:rgba(220,38,38,.60);
+
+}
+
+body.summon-mode .hero-image img{
+
+    filter:
+
+        drop-shadow(
+
+            0 0 55px rgba(220,38,38,.75)
+
+        );
+
+}
+
+body.summon-mode button{
+
+    animation:glow .9s infinite;
+
+}
+
+/* ===============================
+   SHAKE
+================================ */
+
+body.shake{
+
+    animation:shake .35s;
+
+}

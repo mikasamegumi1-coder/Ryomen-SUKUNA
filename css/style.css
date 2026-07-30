@@ -208,3 +208,52 @@ button:hover{
 .hero-image img:hover{
     transform:scale(1.03);
 }
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard{
+    display:grid;
+    gap:25px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    transition:.35s;
+    cursor:pointer;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff2a2a;
+    box-shadow:0 0 25px rgba(255,0,0,.35);
+}
+
+.stat-card h3{
+    font-size:38px;
+    color:#ff3b3b;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#cfcfcf;
+    font-size:15px;
+}
+
+.overview h2,
+.recommendation h2,
+.grade h2,
+.insight h2{
+    margin-bottom:18px;
+}
